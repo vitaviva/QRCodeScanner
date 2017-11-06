@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/pref_header" />
+
+    <View
+        android:id="@+id/horizonal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/title_bar"
+        android:background="@color/divider" />
+
+    <ScrollView
+        android:id="@+id/content_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/horizonal_divider"
+        android:background="@color/common_bg_light" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" >
+
+            <EditText
+                android:id="@+id/et_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="top"
+                android:minLines="5"
+                android:textColor="@color/black"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_copy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_default"
+                    android:text="@string/url_menu_item_copy_selected_text"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_default"
+                    android:text="@string/urlbar_search_hint"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

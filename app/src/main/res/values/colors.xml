@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_dialog_title_text">#585a5c</color>
+    <color name="common_split_line_light">#919090</color>
+    <color name="custom_dialog_color_button">#585a5c</color>
+    <color name="custom_dialog_content_text">#76787a</color>
+    <color name="setting_line_new">#eBe9eb</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#02b831</color>
+    <color name="black">#000000</color>
+    <color name="divider">#e8e9eb</color>
+    <color name="grey">#c1c4c1</color>
+    <color name="common_bg_light">#f3f3f3</color>
+</resources>

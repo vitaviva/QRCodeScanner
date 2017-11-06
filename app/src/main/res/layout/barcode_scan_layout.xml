@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vitaviva.qrcodescanner.core.BarcodeScanView
+        android:id="@+id/barcode_scan_scanview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.vitaviva.qrcodescanner.core.DefaultScanCursorView
+            android:id="@+id/barcode_scan_cursorview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_bar" />
+
+        <com.vitaviva.qrcodescanner.core.CollapsibleView
+            android:id="@+id/barcode_scan_unfoldableview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/title_bar"
+            layout="@layout/pref_header"
+            android:background="#b2000000" />
+
+        <ToggleButton
+            android:id="@+id/barcode_scan_flashlight_btn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title_bar"
+            android:layout_marginEnd="@dimen/record_item_margin"
+            android:layout_marginRight="@dimen/record_item_margin"
+            android:layout_marginTop="@dimen/record_item_margin"
+            android:background="@drawable/flashlight_btn_bg"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+</FrameLayout>

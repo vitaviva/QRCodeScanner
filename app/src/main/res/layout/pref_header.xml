@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillx"
+    android:background="@android:drawable/title_bar"
+    android:minHeight="@dimen/title_bar_min_height">
+
+    <TextView
+        android:id="@+id/back"
+        style="@style/record_item_title"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/title_back"
+        android:gravity="center"
+        android:minHeight="@dimen/button_min_size"
+        android:minWidth="@dimen/button_min_size"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/back_text"
+        style="@style/record_item_title"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minHeight="@dimen/button_min_size"
+        android:minWidth="@dimen/button_min_size"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="115dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/setting"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/setting_pref_head_text_size" />
+
+    <View
+        android:id="@+id/title_left_button_line"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/back"
+        android:layout_toRightOf="@id/back"
+        android:background="@color/setting_line_new"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_right_button"
+        style="@style/record_item_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/record_item_margin"
+        android:layout_marginStart="@dimen/record_item_margin"
+        android:gravity="center"
+        android:minHeight="@dimen/button_min_size"
+        android:minWidth="@dimen/button_min_size"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/title_right_button_line"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/title_right_button"
+        android:background="@color/setting_line_new"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/title_right_button" />
+
+</RelativeLayout>

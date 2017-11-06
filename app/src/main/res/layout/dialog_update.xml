@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:browser="http://schemas.android.com/apk/lib/com.google.android.apps.chrome"
+    android:id="@+id/progress_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_list_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_progress_content"
+        android:layout_width="230dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--  android:layout_marginBottom="85dp"
+        android:layout_marginTop="85dp" -->
+        <com.vitaviva.qrcodescanner.ProgressView
+            android:id="@+id/update_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dialog_loading"
+            browser:duration="1000"
+            browser:frameCount="30" />
+
+        <TextView
+            android:id="@+id/update_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/update_waiting"
+            android:textColor="@color/custom_dialog_content_text"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/update_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="2dp"
+        android:padding="15dp"
+        android:src="@drawable/update_close" />
+
+</RelativeLayout>

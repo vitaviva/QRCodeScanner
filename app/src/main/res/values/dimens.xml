@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_dialog_title">17sp</dimen>
+    <dimen name="custom_dialog_button">15sp</dimen>
+    <dimen name="title_bar_min_height">45dip</dimen>
+    <dimen name="button_min_size">44dp</dimen>
+    <dimen name="setting_pref_head_text_size">17dp</dimen>
+    <dimen name="record_item_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vitaviva.qrcodescanner">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_label"
+        android:supportsRtl="true"
+        android:icon="@drawable/barcode_logo"
+        tools:replace="android:label">
+
+        <activity
+            android:name="com.vitaviva.qrcodescanner.BarcodeScanActivity"
+            android:allowTaskReparenting="false"
+            android:alwaysRetainTaskState="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|fontScale"
+            android:launchMode="singleTop"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vitaviva.qrcodescanner.TextScanResultActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|fontScale"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait"/>
+
+    </application>
+</manifest>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_label">条码扫描器</string>
+    <string name="update_waiting">正在检查更新</string>
+    <string name="barcode_file_scan_failed_hint">无法识别条码信息</string>
+    <string name="scan_time_too_long">扫描时间过长</string>
+    <string name="setting">设置</string>
+    <string name="title_barcode">条码扫描器</string>
+    <string name="album">相册</string>
+    <string name="hint_information">提示信息</string>
+    <string name="camera_open_problem">相机启动出现问题</string>
+    <string name="ok">确定</string>
+    <string name="scanning">扫描中</string>
+    <string name="url_menu_item_copy_selected_text">复制</string>
+    <string name="urlbar_search_hint">搜索</string>
+    <string name="text_message">文本信息</string>
+    <string name="added_to_clip_board">已经添加到剪切板</string>
+</resources>

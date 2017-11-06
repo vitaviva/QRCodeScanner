@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:drawable/alert_light_frame"
+    android:orientation="vertical" >
+
+    <!-- header -->
+
+    <include
+        android:id="@+id/title_header"
+        layout="@layout/custom_dialog_header" />
+
+    <LinearLayout
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_split_line_light"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- content -->
+
+        <FrameLayout
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" 
+            />
+        <!-- footer -->
+
+        <LinearLayout
+            android:id="@+id/delimiter_line_above_button"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_split_line_light"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <TextView
+                android:id="@+id/button2"
+                style="@style/custonm_dialog_button"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_common_bar"
+                android:gravity="center" />
+
+            <View
+                android:id="@+id/btn_seperator3"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/common_split_line_light"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/button3"
+                style="@style/custonm_dialog_button"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_common_bar"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/btn_seperator2"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/common_split_line_light"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/button1"
+                style="@style/custonm_dialog_button"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_common_bar"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
